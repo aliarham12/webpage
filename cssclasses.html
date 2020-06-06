@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Affordable and professional web design">
+	  <meta name="keywords" content="web design, affordable web design, professional web design">
+  	<meta name="author" content="Brad Traversy">
+    <title>Tutorial Web Deisgn | About</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">Tutorial</span> Web Design</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="current"><a href="about.html">About</a></li>
+	<li><a href="htmlclasses.html">html classes</a></li>
+	<li><a href="cssclasses.html">css classes</a></li><br>
+             <li><a href="graphic classes.html">Graphic classes</a></li>
+            <li><a href="careers.html">careers</a></li>
+
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="newsletter">
+      <div class="container">
+        <h1>css classes</h1>
+        <form>
+          <input type="email" placeholder="Enter in class...">
+          <button type="submit" class="button_1">lectures</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="main">
+      <div class="container">
+        <article id="main-col">
+          <h1 class="page-title">web design basic(css)</h1>
+          <p>CSS as I said before stands for Cascading Style Sheets<br>
+These styles that we apply decide how to show and place the HTML elements.<br>
+
+There are 3 ways we can apply styles to our HTML document :<br>
+1) External style sheet<br>
+2) Internal style sheet<br>
+3) Inline styles<br>
+
+CSS was introduced because HTML was created only to note the information down with tags like <p> <br /> etc...<br>
+CSS was supposed to give HTML all the styles it needed...<br>
+
+Commands in CSS are called "rules" like "tags" in HTML documents...<br>
+          
+          </p>
+<h2>Step 2: Syntax in CSS:</h2>
+          <p class="dark">
+Every CSS rule has 2 parts in it,<br>
+
+1) Selector (Each rule can only have 1 selector)<br>
+2) Declaration (Each rule can have more than 1 declaration)<br>
+
+Selector is the actual HTML tag that you want to style and edit, so if you want to change the look of a <h1> tag, then<br>
+
+Selector = h1<br>
+Declaration = color:purple   font-weight:bold<br>
+(These declarations are used if you want to make anything contained in the <h1> tag to be in purple color and be seen in bold)<br>
+
+In declarations, the first part is the property, "CSS property" (color, font-weight) and the second part is the "value" (purple, bold)</p>
+
+        </article>
+	 <aside id="sidebar">
+          <div class="dark">
+            <h3>Step 3: CSS ID and CLASS Rules</h3>
+            <p>{
+Lets say you want to make a box on the right of your page where you can insert text...then you would need to make your own tag and define it via CSS in order for it to do so....
+<br>
+We use ID and CLASS selectors to get the job done for us...<br>
+
+We use them like this :<br>
+
+HTML file<br>
+
+<div id="MYFIRSTDIVID"><br>
+(<p> This content goes into the box on the right hand side of the page </p>)<br>
+(</div>)<br>
+
+CSS file<br>
+
+#MYFIRSTDIVID<br>
+{<br>
+float:right;<br>
+height:100px;<br>
+width:100px;<br>
+border: 2px solid black;<br>
+}<br>
+
+To style div id's that you make, you <span style= “background-color: #FFFF00″>use the "#" sign</span> in the CSS file...<br>
+To style div classes that you make, you <span style= “background-color: #FFFF00″>use a "." (period)</span> in the CSS file<br>
+
+IDs are used when you are making it like a whole different tag like in the example above, but CLASSES are used when you want to style things inside another tag, like<br>
+
+HTML File<br>
+
+(<p> This <div class="MYFIRSTDIVCLASS"> text </div> is styled by div class...</p>)<br>
+
+CSS file<br>
+
+.MYFIRSTDIVCLASS<br>
+{
+font-style:italic;<br>
+font-weight:bold;<br>
+font-color:yellow;<br>
+}
+
+So classes are used when you have the specific div class inside another HTML tag (Excluding HTML, Body and Head tags)<br>
+Pre-defined elements like (h2, p, h1, br, em, i, b etc...) are edited using the div class function because they are repeated a lot of times in the document, and therefore it has to be a class div...<br>
+Div IDs are used when you are going to use the styles element only once in the HTML document...</p>}<br>
+          </div><br>
+        </aside><br>
+      </div><br>
+    </section><br>
+
+    <footer><br>
+<p>THESE ARE THE BASIC INSTRUTION TO SHOW WHAT CSS IS ABOUT FOR FURTHER DETAIL JION US></p><br>
+      <p>Acme Web Deisgn, Copyright &copy; 2017</p>
+    </footer>
+  </body>
+</html>
